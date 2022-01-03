@@ -385,7 +385,7 @@ img {
 .confer-logo img {
   width: 100%;
   background-color: #ec5242;
-  height: max-content;
+  height: fit-content;
 }
 
 
