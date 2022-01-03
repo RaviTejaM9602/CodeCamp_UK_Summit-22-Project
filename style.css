@@ -70,11 +70,7 @@ ul {
   z-index: 100;
   background-color: var(--dark);
   height: 100%;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
   left: -100%;
@@ -287,8 +283,7 @@ img {
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-gap: 3px;
-  grid-template-areas:
-  'picture  description'
+  grid-template-areas: 'picture  description'
   'picture  description'
   'role role';
   padding: 0 24px;
@@ -373,3 +368,24 @@ img {
   color: #d3d3d3;
   text-align: center;
 }
+
+.footer-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 45px 45px;
+}
+
+.confer-logo {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.confer-logo img {
+  width: 100%;
+  background-color: #ec5242;
+  height: max-content;
+}
+
+
