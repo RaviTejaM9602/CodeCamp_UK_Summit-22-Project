@@ -269,3 +269,73 @@ img {
   width: 60%;
   display: inline;
 }
+
+.service-partners {
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  display: flex;
+  flex-direction: column; 
+}
+
+.partner-title {
+  color: var(--dark);
+  text-align: center;
+  margin: 0;
+}
+
+.partner {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 3px;
+  grid-template-areas: 
+  'picture  description'
+  'picture  description'
+  'role role';
+  padding: 0 24px;
+}
+
+.partner-image {
+  grid-area: picture;
+  width: 100%;
+}
+
+.partner-designation {
+  grid-area: description;
+  padding-left: 10px;
+}
+
+.partner-intro {
+  grid-area: role;
+  padding-left: 10px;
+}
+
+.partner-designation h4 {
+  color: #272a32;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 20px; 
+}
+
+.partner-designation h6 {
+  color: #ff4f38;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 15px;
+  margin-top: -12px;
+}
+
+.partner-designation:last-child {
+  margin-top: -12px;
+}
+
+.partner-intro p {
+  color: #272a32;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 20px;
+}
+
+
