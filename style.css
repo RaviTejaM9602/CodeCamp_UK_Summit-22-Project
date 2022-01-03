@@ -199,3 +199,28 @@ img {
   line-height: 28px;
   margin-top: 20px;
 }
+
+.available-services {
+  background-image: url(./Images/angle-puls.png), linear-gradient(0deg, var(--dark) 50%, var(--dark) 50%);
+  background-repeat: repeat;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-title {
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: auto;
+  font-weight: 300;
+  text-align: center;
+}
+
+.section-title-separators {
+  width: 53px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(239, 81, 60);
+}
+
