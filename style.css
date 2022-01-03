@@ -224,3 +224,48 @@ img {
   border: 1px solid rgb(239, 81, 60);
 }
 
+.main-service-grid {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  padding: 20px 10px;
+  background-color: #d3d3d31e;
+  margin-bottom: 25px;
+  grid-gap: 1rem;
+}
+
+.service-icon img {
+  width: 100%;
+}
+
+.service-title h3 {
+  color: var(--orange);
+  font-size: 1.4em;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 25px;
+}
+
+.service-description p {
+  color: var(--white-smoky);
+  font-size: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 25px;
+}
+
+.see-all {
+  background-color: #ec5242;
+  color: #d3d3d3;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 16px;
+  align-self: center; 
+  text-align: center;
+  width: 60%;
+  display: inline;
+}
