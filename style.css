@@ -274,7 +274,7 @@ img {
   padding-top: 10vh;
   padding-bottom: 5vh;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .partner-title {
@@ -287,7 +287,7 @@ img {
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-gap: 3px;
-  grid-template-areas: 
+  grid-template-areas:
   'picture  description'
   'picture  description'
   'role role';
@@ -314,7 +314,7 @@ img {
   font-size: 20px;
   font-weight: 300;
   font-family: 'Nanum Gothic', sans-serif;
-  line-height: 20px; 
+  line-height: 20px;
 }
 
 .partner-designation h6 {
@@ -337,5 +337,3 @@ img {
   font-family: 'Nanum Gothic', sans-serif;
   line-height: 20px;
 }
-
-
