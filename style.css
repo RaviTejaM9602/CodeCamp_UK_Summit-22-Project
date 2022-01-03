@@ -227,7 +227,7 @@ img {
 .main-service-grid {
   display: flex;
   flex-direction: column;
-  padding: 0 24px
+  padding: 0 24px;
 }
 
 .service-list {
@@ -264,7 +264,7 @@ img {
   color: #d3d3d3;
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 16px;
-  align-self: center; 
+  align-self: center;
   text-align: center;
   width: 60%;
   display: inline;
