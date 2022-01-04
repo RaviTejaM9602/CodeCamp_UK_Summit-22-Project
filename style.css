@@ -284,7 +284,8 @@ img {
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-gap: 3px;
-  grid-template-areas: 'picture  description'
+  grid-template-areas:
+  'picture  description'
   'picture  description'
   'role role';
   padding: 0 24px;
@@ -512,24 +513,24 @@ img {
     position: absolute;
     width: 100%;
   }
-
+  
   .mobile-menu {
-   display: none;
-  } 
-
+    display: none;
+  }
+  
   .main-header-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-
+  
   .main-header .desktop-logo {
-   align-self: flex-start;
-   background-color: #ec5242;
-   margin: 5px;
+    align-self: flex-start;
+    background-color: #ec5242;
+    margin: 5px;
   }
-
+  
   .main-header-content .close {
     color: #272a31;
     margin: 15px 0;
@@ -538,13 +539,9 @@ img {
     line-height: 40px;
     font-weight: 400;
   }
-
+  
   .main-section-container {
     margin-top: 70px;
   }
-
-
 }
-
-
 
