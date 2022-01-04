@@ -246,6 +246,7 @@ img {
   display: table-cell;
   vertical-align: middle;
   line-height: 25px;
+  text-align: center;
 }
 
 .service-description p {
@@ -385,16 +386,19 @@ img {
 }
 
 .footer-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  padding: 45px 45px;
+  padding: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d3d3d3;
+  gap: 50px;
 }
 
 .confer-logo {
   display: flex;
   flex-direction: column;
   align-self: center;
+  background-color: rgb(239, 81, 60);
 }
 
 /* About Page */
@@ -541,4 +545,38 @@ img {
   .main-section-container {
     margin-top: 70px;
   }
+
+  .main-service-grid {
+    display: flex;
+    flex-direction: row;
+    padding: 0 24px;
+  }
+
+  .service-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    padding: 10px 20px;
+    background-color: #d3d3d31e;
+    margin-bottom: 25px;
+    grid-column-gap: 3px;
+    margin: 2px;
+  }
+  
+  .service-icon img {
+    width: 100%;
+    align-self: center;
+  }
+
+  .partner {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 3px;
+    padding: 0 24px;
+  }
+  
 }
+
+
