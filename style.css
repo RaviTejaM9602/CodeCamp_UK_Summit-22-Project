@@ -285,9 +285,9 @@ img {
   grid-template-columns: 2fr 3fr;
   grid-gap: 3px;
   grid-template-areas: 
-     "picture  description"
-     "picture  description"
-     "role role";
+      "picture  description"
+      "picture  description"
+      "role role";
   padding: 0 24px;
 }
 
@@ -368,6 +368,12 @@ img {
   margin: 5% 20%;
 }
 
+.confer-logo img {
+  width: 100%;
+  background-color: #ec5242;
+  height: 100%;
+}
+
 .official-partners-items img:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
@@ -389,12 +395,6 @@ img {
   display: flex;
   flex-direction: column;
   align-self: center;
-}
-
-.confer-logo img {
-  width: 100%;
-  background-color: #ec5242;
-  height: fit-content;
 }
 
 /* About Page */
