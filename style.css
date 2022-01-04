@@ -446,8 +446,7 @@ button {
 
 .camp-description {
   font-size: 15px;
-  display: table-cell;
-  vertical-align: middle;
+  text-align: center;
   line-height: 24px;
   color: #272a31;
   margin: 5px;
