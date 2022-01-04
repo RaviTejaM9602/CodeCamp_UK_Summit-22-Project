@@ -87,13 +87,6 @@ ul {
   color: var(--orange) !important;
 }
 
-.mailing-to a {
-  color: var(--dark);
-  text-decoration: underline;
-  font-weight: 800;
-  font-size: 16px;
-}
-
 .mobile-nav ul li a {
   color: var(--white-smoky);
   font-size: 2em;
@@ -386,6 +379,49 @@ img {
   width: 100%;
   background-color: #ec5242;
   height: fit-content;
+}
+
+/* About Page */
+
+.camp-work {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: var(--white);
+}
+
+.camp-title {
+  color: #272a32;
+  font-size: 25px;
+  text-align: center;
+}
+
+.camp-title-separators {
+  color: #ec5242;
+  border-bottom: 1px solid #ec5242;
+  width: 20%;
+  align-self: center;
+}
+
+.camp-description {
+  font-size: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 24px;
+  color: #272a31;
+  margin: 5px;
+  padding: 0 30px;
+}
+
+.camp-logo {
+  border: 2px solid #272a31;
+  margin: 20px 25px;
+}
+
+.camp-logo img {
+  background-color: #ec5242;
+  width: 60%;
+  height: 92%;
+  margin: 5% 20%;
 }
 
 
