@@ -10,7 +10,7 @@ const speakerList = [{
   Role: 'Director of Art Center Nabl and a board member of A.G.S Korea',
   Description: 'As the man venue for new media art production in Korea,Nabi promotes cross-discipinary collaboration and understanding among science technology, humanities, and the arts.',
 },
-{ 
+{
   Name: 'Lila Tretikov',
   Img: './Images/Speaker_Images/speaker_03.png',
   Role: 'Executive Director of the Wikimedia Foundation',
@@ -34,7 +34,6 @@ const speakerList = [{
   Role: 'CEO of Creative Commons, ex COO of the Mozilla Foundation',
   Description: 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open source move-ment.',
 }];
-
 
 const expandSupport = (start, end) => {
   if (start === 0) {
@@ -82,4 +81,3 @@ window.addEventListener('resize', () => {
     expandSupport(0, speakerList.length);
   }
 });
-

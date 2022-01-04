@@ -15,10 +15,6 @@ body {
   margin: 0;
 }
 
-button {
-  cursor: pointer;
-}
-
 a {
   text-decoration: none;
 }
@@ -312,7 +308,7 @@ img {
 
 .partner img {
   width: 100%;
-  padding: 0 10px;  
+  padding: 0 10px;
 }
 
 .partner-description {
@@ -354,6 +350,7 @@ button {
   align-content: center;
   justify-content: center;
   margin: auto;
+  cursor: pointer;
 }
 
 .web-button:hover,
@@ -556,7 +553,7 @@ button {
   .main-section-container {
     margin-top: 70px;
   }
-
+  
   .main-service-grid {
     flex-direction: row;
     flex-wrap: wrap;
@@ -619,4 +616,3 @@ button {
     padding: 20px;
   }
 }
-
