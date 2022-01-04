@@ -434,8 +434,7 @@ img {
 }
 
 .camp-work .meetup-1 {
-  background-image: linear-gradient(to right, rgba(238, 61, 17, 0.6), 
-  rgba(238, 61, 17, 0.6)), url('./Images/about/conference.jpg');
+  background-image: linear-gradient(to right, rgba(238, 61, 17, 0.6),rgba(238, 61, 17, 0.6)), url('./Images/about/conference.jpg');
   height: 100%;
   display: grid;
   align-content: center;
@@ -444,8 +443,7 @@ img {
 }
 
 .camp-work .meetup-2 {
-  background-image: linear-gradient(to right, rgba(238, 61, 17, 0.6), 
-  rgba(238, 61, 17, 0.6)), url('./Images/about/conference-2.jpg');
+  background-image: linear-gradient(to right, rgba(238, 61, 17, 0.6),rgba(238, 61, 17, 0.6)), url('./Images/about/conference-2.jpg');
   height: 100%;
   display: grid;
   align-content: center;
@@ -544,4 +542,3 @@ img {
     margin-top: 70px;
   }
 }
-
