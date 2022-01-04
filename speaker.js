@@ -35,3 +35,4 @@ const speakers = [{
   desc: 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open source move-ment.',
 },
 ];
+

@@ -289,8 +289,8 @@ img {
       "picture  description"
       "picture  description"
       "role role";
-  padding: 0 24px;
-}
+      padding: 0 24px;
+    }
 
 .partner-image {
   grid-area: picture;
@@ -576,7 +576,4 @@ img {
     grid-gap: 3px;
     padding: 0 24px;
   }
-  
 }
-
-
