@@ -222,18 +222,41 @@ img {
 }
 
 .main-service-grid {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 0 24px;
 }
 
 .service-list {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 2fr 3fr;
   grid-template-columns: 1fr 2fr 3fr;
   padding: 20px 10px;
   background-color: #d3d3d31e;
   margin-bottom: 25px;
   grid-gap: 1rem;
+}
+
+.service-list:hover {
+  outline: 2px solid var(--white-smoky);
+}
+
+.service-title,
+.service-description {
+  display: table;
+}
+
+.service-icon {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .service-icon img {
@@ -246,7 +269,6 @@ img {
   display: table-cell;
   vertical-align: middle;
   line-height: 25px;
-  text-align: center;
 }
 
 .service-description p {
@@ -258,14 +280,15 @@ img {
 }
 
 .see-all {
-  background-color: #ec5242;
-  color: #d3d3d3;
-  font-family: 'Nanum Gothic', sans-serif;
-  font-size: 16px;
+  width: 70%;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
+  background-color: var(--orange);
+  color: var(--white-smoky);
+  padding: 20px;
+  font-size: 16px;
   text-align: center;
-  width: 60%;
-  display: inline;
 }
 
 .service-partners {
@@ -547,29 +570,54 @@ img {
   }
 
   .main-service-grid {
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
-    padding: 0 24px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
   }
 
   .service-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    padding: 10px 20px;
-    background-color: #d3d3d31e;
-    margin-bottom: 25px;
-    grid-column-gap: 3px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     margin: 2px;
   }
-  
-  .service-icon img {
-    width: 100%;
-    align-self: center;
+
+  .service-icon {
+    display: block;
+    text-align: center;
   }
 
+  .service-icon img {
+    width: 30%;
+    margin: auto;
+  }
+
+  .service-title h3 {
+    text-align: center;
+  }
+
+  .service-description p {
+    text-align: center;
+  }
+
+  .see-all {
+    background-color: transparent;
+    margin-top: 40px;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  
   .partner {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
