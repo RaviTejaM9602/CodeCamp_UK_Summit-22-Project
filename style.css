@@ -284,10 +284,10 @@ img {
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-gap: 3px;
-  grid-template-areas:
-  'picture  description'
-  'picture  description'
-  'role role';
+  grid-template-areas: 
+     "picture  description"
+     "picture  description"
+     "role role";
   padding: 0 24px;
 }
 
@@ -361,6 +361,13 @@ img {
   filter: grayscale(100%);
 }
 
+.camp-logo img {
+  background-color: #ec5242;
+  width: 60%;
+  height: 92%;
+  margin: 5% 20%;
+}
+
 .official-partners-items img:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
@@ -426,15 +433,8 @@ img {
   margin: 20px 25px;
 }
 
-.camp-logo img {
-  background-color: #ec5242;
-  width: 60%;
-  height: 92%;
-  margin: 5% 20%;
-}
-
 .camp-work .meetup-1 {
-  background-image: linear-gradient(to right, rgba(238, 61, 17, 0.6),rgba(238, 61, 17, 0.6)), url('./Images/about/conference.jpg');
+  background-image: linear-gradient(to right, rgba(238, 61, 17, 0.6), rgba(238, 61, 17, 0.6)), url('./Images/about/conference.jpg');
   height: 100%;
   display: grid;
   align-content: center;
@@ -443,7 +443,7 @@ img {
 }
 
 .camp-work .meetup-2 {
-  background-image: linear-gradient(to right, rgba(238, 61, 17, 0.6),rgba(238, 61, 17, 0.6)), url('./Images/about/conference-2.jpg');
+  background-image: linear-gradient(to right, rgba(238, 61, 17, 0.6), rgba(238, 61, 17, 0.6)), url('./Images/about/conference-2.jpg');
   height: 100%;
   display: grid;
   align-content: center;
