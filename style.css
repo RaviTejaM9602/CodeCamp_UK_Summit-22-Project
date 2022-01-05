@@ -15,6 +15,10 @@ body {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -218,34 +222,18 @@ img {
 }
 
 .main-service-grid {
-  display: -webkit-box;
   display: flex;
   flex-direction: column;
   padding: 0 24px;
 }
 
 .service-list {
-  display: -ms-grid;
   display: grid;
   grid-template-columns: 1fr 2fr 3fr;
   padding: 20px 10px;
   background-color: #d3d3d31e;
   margin-bottom: 25px;
   grid-gap: 1rem;
-}
-
-.service-list:hover {
-  outline: 2px solid var(--white-smoky);
-}
-
-.service-title,
-.service-description {
-  display: table;
-}
-
-.service-icon {
-  display: grid;
-  align-items: center;
 }
 
 .service-icon img {
@@ -258,6 +246,7 @@ img {
   display: table-cell;
   vertical-align: middle;
   line-height: 25px;
+  text-align: center;
 }
 
 .service-description p {
@@ -269,16 +258,15 @@ img {
 }
 
 .see-all {
-  width: 70%;
-  align-self: center;
-  background-color: var(--orange);
-  color: var(--white-smoky);
-  padding: 20px;
+  background-color: #ec5242;
+  color: #d3d3d3;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 16px;
+  align-self: center;
   text-align: center;
+  width: 60%;
+  display: inline;
 }
-
-/* partners Section */
 
 .service-partners {
   padding-top: 10vh;
@@ -295,27 +283,31 @@ img {
 
 .partner {
   display: grid;
-  grid-template-columns: 1fr;
-}
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 3px;
+  grid-template-areas: 
+      "picture  description"
+      "picture  description"
+      "role role";
+      padding: 0 24px;
+    }
 
-.partner-item {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
-  padding: 0 24px;
-  margin-bottom: 20px;
-}
-
-.partner img {
+.partner-image {
+  grid-area: picture;
   width: 100%;
-  padding: 0 10px;
 }
 
-.partner-description {
-  padding: 0 10px;
+.partner-designation {
+  grid-area: description;
+  padding-left: 10px;
 }
 
-.partner-description h4 {
+.partner-intro {
+  grid-area: role;
+  padding-left: 10px;
+}
+
+.partner-designation h4 {
   color: #272a32;
   font-size: 20px;
   font-weight: 300;
@@ -323,7 +315,7 @@ img {
   line-height: 20px;
 }
 
-.partner-description h6 {
+.partner-designation h6 {
   color: #ff4f38;
   font-size: 18px;
   font-weight: 200;
@@ -332,30 +324,16 @@ img {
   margin-top: -12px;
 }
 
-.partner-description p {
+.partner-designation:last-child {
+  margin-top: -12px;
+}
+
+.partner-intro p {
   color: #272a32;
   font-size: 20px;
   font-weight: 300;
   font-family: 'Nanum Gothic', sans-serif;
   line-height: 20px;
-}
-
-button {
-  background-color: #282424;
-  color: #fff;
-  font-weight: 600;
-  padding: 1.5rem;
-  border: none;
-  width: 40%;
-  align-content: center;
-  justify-content: center;
-  margin: auto;
-  cursor: pointer;
-}
-
-.web-button:hover,
-.web-button:active {
-  background-color: #383535;
 }
 
 .official-partners {
@@ -446,7 +424,8 @@ button {
 
 .camp-description {
   font-size: 15px;
-  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
   line-height: 24px;
   color: #272a31;
   margin: 5px;
@@ -476,20 +455,34 @@ button {
   margin: 30px 16px;
 }
 
-.camp-work .meetup-1 .meeting-outline li {
+.camp-work .meetup-1 h2 {
   text-align: center;
   font-size: 3em;
   color: #f5f5f5;
   margin: 10px 0;
-  list-style: none;
 }
 
-.camp-work .meetup-2 .meeting-outline li {
+.camp-work .meetup-1 h4 {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #f5f5f5;
+  margin: 0;
+}
+
+.camp-work .meetup-2 h2 {
   text-align: center;
   font-size: 3em;
   color: #f5f5f5;
   margin: 10px 0;
-  list-style: none;
+}
+
+.camp-work .meetup-2 h4 {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #f5f5f5;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -522,24 +515,24 @@ button {
     position: absolute;
     width: 100%;
   }
-
+  
   .mobile-menu {
     display: none;
   }
-
+  
   .main-header-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-
+  
   .main-header .desktop-logo {
     align-self: flex-start;
     background-color: #ec5242;
     margin: 5px;
   }
-
+  
   .main-header-content .close {
     color: #272a31;
     margin: 15px 0;
@@ -548,70 +541,39 @@ button {
     line-height: 40px;
     font-weight: 400;
   }
-
+  
   .main-section-container {
     margin-top: 70px;
   }
 
   .main-service-grid {
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
+    padding: 0 24px;
   }
 
   .service-list {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    padding: 10px 20px;
+    background-color: #d3d3d31e;
+    margin-bottom: 25px;
+    grid-column-gap: 3px;
     margin: 2px;
   }
-
-  .service-icon {
-    display: block;
-    text-align: center;
-  }
-
+  
   .service-icon img {
-    width: 30%;
-    margin: auto;
-  }
-
-  .service-title h3 {
-    text-align: center;
-  }
-
-  .service-description p {
-    text-align: center;
-  }
-
-  .see-all {
-    background-color: transparent;
-    margin-top: 40px;
-    text-decoration: underline;
-    text-transform: uppercase;
+    width: 100%;
+    align-self: center;
   }
 
   .partner {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3px;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 3px;
     padding: 0 24px;
-    width: 80%;
-    margin: auto;
-  }
-
-  .more {
-    display: none;
-  }
-
-  .camp-work .meeting {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .camp-work .meetup-2 .meeting-outline li,
-  .camp-work .meetup-1 .meeting-outline li {
-    padding: 20px;
   }
 }
